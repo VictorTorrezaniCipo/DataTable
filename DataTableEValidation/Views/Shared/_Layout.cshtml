@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="Content/bootstrap-3.3.7-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="Content/DataTables-1.10.15/media/css/jquery.dataTables.css" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    
+</head>
+<body>
+
+    <div class="body container">
+        @RenderBody()
+    </div>
+
+    @*<script src="Content/bootstrap-3.3.7-dist/js/bootstrap.js"></script>*@
+    <script src="Content/jquery-3.2.1.js"></script>
+    <script src="Content/DataTables-1.10.15/media/js/jquery.dataTables.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
